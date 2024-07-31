@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}404{% endblock title %}
+
+{% block content %}
+
+<div class='bg-sky-800 text-white p-3 md:px-10 lg:px-20 xl:px-40 2xl:px-72'>
+    <div class='p-5 grid place-items-center mt-10 mb-40 text-center'>
+        {% comment %} <img class='h-auto w-96' src="{% static 'images/404-error.svg' %}" alt="image"> {% endcomment %}
+        <p style="font-family: Poppins-Bold;" class='my-4 text-5xl font-extrabold md:text-8xl'>404</p>
+        <p class=''>Ah, the elusive 404 error—the digital equivalent of a secret passage to nowhere! 🕳️</p>
+        <p class=''>Error 404 Not Found is like the Bermuda Triangle of the internet. It means the page you were searching for has vanished into thin air, leaving you with a virtual shrug and a perplexed expression. But fear not! Let’s unravel this mystery together.</p>
+        <p class=''>Here are a few ways to decode the 404 enigma:</p><br>
+        <ul><br>
+            <li><b>Double-Check the URL:</b>
+                Sometimes our typing fingers get a little rebellious. Recheck the URL for typos or gremlins that might have sneaked in.</li><br>
+            <li><b>Clear Cache and Cookies:</b>
+                Your browser might be holding onto outdated information. Clear your cache and cookies, like giving your browser a refreshing spa day.</li><br>
+            <li><b>Try Another Device or Browser:</b>
+                Maybe your current device is in a mood. Switch to another browser or device to see if the page magically reappears.</li><br>
+            <li><b>Incognito Mode to the Rescue:</b>
+                Open an incognito or private browsing window. It’s like wearing an invisibility cloak for your cache and cookies.</li><br>
+            <li><b>Wait for DNS Propagation:</b>
+                If you recently changed your domain settings, it might take up to 24 hours for the DNS magic to settle. Patience, young Padawan.</li><br>
+            <li><b>404 Audit:</b>
+                Regularly scan your website for broken links. Google Search Console is your trusty sidekick here.</li>
+        </ul>
+            
+            
+            
+            
+            
+            
+            
+
+            <p class=''>Remember, even the best websites have their mysterious corners. But fear not, intrepid explorer! You’re not lost; you’re just on an unexpected adventure. 🌟🗺️</p>
+            
+            <p class=''>And hey, if you find any wormholes, let me know—I’ve always wanted to visit Narnia! 😉🚀</p>
+    </div>
+    <div class="text-xl p-5 grid grid-cols-1 place-items-center items-center md:grid-cols-3 -mt-44 gap-x-4">
+        <div onclick="location.href='/';" style="box-shadow:0 5px 30px 0 rgba(0,0,0,.05);" class="hover:scale-105 hover:transform transition duration-300 cursor-pointer bg-sky-900 rounded-lg h-40 w-full my-4 text-center p-5 grid place-items-center">
+            <div>
+            <p class='text-4xl my-2'><i class="bi bi-house-door text-transparent bg-clip-text bg-gradient-to-r from-teal-200 to-zinc-500"></i></p>
+            <p class='text-base'>Return Home</p>
+            </div>
+        </div>
+        <div onclick="location.href='/categories';" style="box-shadow:0 5px 30px 0 rgba(0,0,0,.05);" class="hover:scale-105 hover:transform transition duration-300 cursor-pointer bg-sky-900 rounded-lg h-40 w-full my-4 text-center p-5 grid place-items-center">
+            <div>
+            <p class='text-4xl my-2'><i class="bi bi-tags text-transparent bg-clip-text bg-gradient-to-r from-teal-200 to-zinc-500"></i></p>
+            <p class='text-base'>Browse Categories</p>
+            </div>
+        </div>
+        <div onclick="location.href='/blog';" style="box-shadow:0 5px 30px 0 rgba(0,0,0,.05);" class="hover:scale-105 hover:transform transition duration-300 cursor-pointer bg-sky-900 rounded-lg h-40 w-full my-4 text-center p-5 grid place-items-center">
+            <div>
+            <p class='text-4xl my-2'><i class="bi bi-book text-transparent bg-clip-text bg-gradient-to-r from-teal-200 to-zinc-500"></i></p>
+            <p class='text-base'>Visit Blog</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
